@@ -18,48 +18,51 @@ namespace Lab1
 		}
 		public void KeyBannerInt(object sender, KeyPressEventArgs e)//блокировалка не цифр (2 аргумента чтоб его мог использовать текстбох как метод)
 		{
-			if (!Char.IsDigit(e.KeyChar) && e.KeyChar != 8 && e.KeyChar != 127)//проверка на цифру или удалялку
-			{
-				e.Handled = true;//блокируем ввод
-			}
+			TextBox CurrentInput = sender as TextBox;
+			if (!Char.IsDigit(e.KeyChar) && e.KeyChar != 8 && e.KeyChar != 127 && e.KeyChar != '-')//проверка на цифру или удалялку или минус
+				e.Handled = true;//блокируем ввод знака
+			if (CurrentInput.Text.Length > 0 && e.KeyChar == '-')//при попытке ввода минуса вне первой позиции:
+				e.Handled = true;//блокируем ввод знака
 		}
 
-		private void CheckAndResetButton_Click(object sender, EventArgs e)
+		private void CheckAndResetButton_Click(object sender, EventArgs e)//нажатие на кнопку
 		{
-			//if(Side1Input.Text == "")
-			int a = Convert.ToInt32(Side1Input.Text);
-			int b = Convert.ToInt32(Side2Input.Text); 
-			int c = Convert.ToInt32(Side3Input.Text);
+			int a, b, c;//объявляем 3 стороны треугольника
+			//проверялка на отсутствие цифр на вводе (прочих проверок на содержимое нет, т.к. прочее содержимое вводить нельзя)
+			if (Side1Input.Text == "" || Side1Input.Text == "-")//если ввода нет, то программа интерепретирует это как ввод 0
+				Side1Input.Text = "0";
+			if (Side2Input.Text == "" || Side2Input.Text == "-")
+				Side2Input.Text = "0";
+			if (Side3Input.Text == "" || Side3Input.Text == "-")
+				Side3Input.Text = "0";
+			//конец проверялки
+			a = Convert.ToInt32(Side1Input.Text);
+			b = Convert.ToInt32(Side2Input.Text); 
+			c = Convert.ToInt32(Side3Input.Text);
 			//a-1я сторона
 			//b-2я сторона
 			//c-3я сторона
-			if (CheckAndResetButton.Text == "Проверить")
+			if (CheckAndResetButton.Text == "Проверить")//если кнопка находится в положении проверить
 			{
-				if ((a+b > c && b + c > a && c + a > b) && (a != 0 && b != 0 && c != 0))
+				if ((a + b > c && b + c > a && c + a > b) && (a > 0 && b > 0 && c > 0))//проверка возможности существования треугольника
 				{
-					if (a == b && b == c && c == a)
-					{
+					if (a == b && b == c && c == a)// проверка что все пары сторон равны
 						AskAndAnswerLabel.Text = "Полученный треугольник равностороний";
-					}
-					else if (a == b || b == c || c == a)
-					{
+					else if (a == b || b == c || c == a)// проверка что хотябы одна пара сторон равна
 						AskAndAnswerLabel.Text = "Полученный треугольник равнобедренный";
-					}
-					else
-					{
+					else//нет равных сторон
 						AskAndAnswerLabel.Text = "Полученный треугольник разносторонний";
-					}
 				}
-				else
+				else//существование треугольника невозможно
 				{
-					AskAndAnswerLabel.Text = "Данного треугольника не существует, увы😭";
+					AskAndAnswerLabel.Text = "Данного треугольника не существует, увы";
 				}
-				CheckAndResetButton.Text = "Начать снова";
-				Side1Input.Visible = false;
-				Side2Input.Visible = false;
-				Side3Input.Visible = false;
+				CheckAndResetButton.Text = "Начать снова";//меняем текст кнопки, как в примере
+				Side1Input.Visible = false;//прячем все поля ввода, как в примере
+				Side2Input.Visible = false;//^
+				Side3Input.Visible = false;//^
 			}
-			else
+			else//если кнопка находится в положении начать снова
 			{
 				AskAndAnswerLabel.Text = "Введите длины сторон треугольника";
 				CheckAndResetButton.Text = "Проверить";

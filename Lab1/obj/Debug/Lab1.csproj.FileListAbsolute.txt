@@ -8,3 +8,13 @@ C:\Users\Professional\Downloads\Worka\Lab1\bin\Debug\Lab1.exe
 C:\Users\Professional\Downloads\Worka\Lab1\bin\Debug\Lab1.pdb
 C:\Users\Professional\Downloads\Worka\Lab1\obj\Debug\Lab1.exe
 C:\Users\Professional\Downloads\Worka\Lab1\obj\Debug\Lab1.pdb
+D:\worka\0503PR1\Lab1\bin\Debug\Lab1.exe.config
+D:\worka\0503PR1\Lab1\bin\Debug\Lab1.exe
+D:\worka\0503PR1\Lab1\bin\Debug\Lab1.pdb
+D:\worka\0503PR1\Lab1\obj\Debug\Lab1.csproj.AssemblyReference.cache
+D:\worka\0503PR1\Lab1\obj\Debug\Lab1.Lab1Form.resources
+D:\worka\0503PR1\Lab1\obj\Debug\Lab1.Properties.Resources.resources
+D:\worka\0503PR1\Lab1\obj\Debug\Lab1.csproj.GenerateResource.cache
+D:\worka\0503PR1\Lab1\obj\Debug\Lab1.csproj.CoreCompileInputs.cache
+D:\worka\0503PR1\Lab1\obj\Debug\Lab1.exe
+D:\worka\0503PR1\Lab1\obj\Debug\Lab1.pdb
