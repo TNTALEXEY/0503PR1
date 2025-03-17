@@ -23,6 +23,8 @@ namespace Lab1
 				e.Handled = true;//блокируем ввод знака
 			if (CurrentInput.Text.Length > 0 && e.KeyChar == '-')//при попытке ввода минуса вне первой позиции:
 				e.Handled = true;//блокируем ввод знака
+			if (CurrentInput.Text.Length > 6 && (Char.IsDigit(e.KeyChar) || e.KeyChar == '-'))//при попытке ввода слишком длинной строки
+				e.Handled = true;//блокируем ввод знака
 		}
 
 		private void CheckAndResetButton_Click(object sender, EventArgs e)//нажатие на кнопку

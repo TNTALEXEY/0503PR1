@@ -18,3 +18,13 @@ D:\worka\0503PR1\Lab1\obj\Debug\Lab1.csproj.GenerateResource.cache
 D:\worka\0503PR1\Lab1\obj\Debug\Lab1.csproj.CoreCompileInputs.cache
 D:\worka\0503PR1\Lab1\obj\Debug\Lab1.exe
 D:\worka\0503PR1\Lab1\obj\Debug\Lab1.pdb
+C:\Users\Professional\Downloads\Worka\0503PR1\Lab1\bin\Debug\Lab1.exe.config
+C:\Users\Professional\Downloads\Worka\0503PR1\Lab1\bin\Debug\Lab1.exe
+C:\Users\Professional\Downloads\Worka\0503PR1\Lab1\bin\Debug\Lab1.pdb
+C:\Users\Professional\Downloads\Worka\0503PR1\Lab1\obj\Debug\Lab1.csproj.AssemblyReference.cache
+C:\Users\Professional\Downloads\Worka\0503PR1\Lab1\obj\Debug\Lab1.Lab1Form.resources
+C:\Users\Professional\Downloads\Worka\0503PR1\Lab1\obj\Debug\Lab1.Properties.Resources.resources
+C:\Users\Professional\Downloads\Worka\0503PR1\Lab1\obj\Debug\Lab1.csproj.GenerateResource.cache
+C:\Users\Professional\Downloads\Worka\0503PR1\Lab1\obj\Debug\Lab1.csproj.CoreCompileInputs.cache
+C:\Users\Professional\Downloads\Worka\0503PR1\Lab1\obj\Debug\Lab1.exe
+C:\Users\Professional\Downloads\Worka\0503PR1\Lab1\obj\Debug\Lab1.pdb
